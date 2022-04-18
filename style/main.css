@@ -1,0 +1,124 @@
+:root {
+    --nav-bar-bg-color: black;
+    --nav-bar-color: gray;
+
+    --nav-bar-size: 220px;
+}
+
+body {
+    margin: 0;
+
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+
+    font-size: normal;
+}
+
+button {
+    font-size: 16px;
+    font-style: bold;
+}
+
+.spotify-main-container{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: grid;
+
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 2fr;
+    grid-template-areas: "spotify-nav-bar spotify-main-view";
+    position: relative;
+}
+
+.spotify-nav-bar {
+    background-color: black;
+    color: white;
+
+    padding: 20px;
+
+    /*Set the height to max */
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    grid-area: spotify-nav-bar;
+    grid-column-start: 1;
+    
+}
+
+.spotify-main-view {
+    display: flex;
+    background-color: blue;
+
+    grid-area: spotify-main-view;
+    grid-column-start: 2;
+}
+
+.spotify-logo {
+    width: 130px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.spotify-list-header *,.spotify-list-categories *{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.spotify-list-header *{
+    font-weight:bolder;
+}
+
+.spotify-list-categories *{
+    font-weight:600;
+}
+.spotify-ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.ul-padding2-on-li li{
+    padding: 10px;
+}
+
+.ul-padding2left-on-li li{
+    padding-left: 10px;
+}
+
+.spotify-nav-bar-button {
+    background-color: black;
+    color: var(--nav-bar-color);
+    border: none;
+    width: 100%;
+    height: 30px;
+    text-align: start;
+
+    cursor: default;
+    display: flex;
+    align-items: center;
+
+    transition: color .2s linear;
+}
+
+.spotify-nav-bar-button-cursor {
+    cursor: pointer;
+}
+
+.spotify-nav-bar-button * {
+    margin-right: 10px;
+}
+
+.spotify-nav-bar-button:hover {
+    color: white;
+    filter: alpha(opacity=200);
+    opacity: 2;
+}
+
+.spotify-button-icon {
+    width: 24px;
+}
+
+.spotify-divisor {
+    color: var(--nav-bar-color);
+}
