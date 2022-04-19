@@ -1,0 +1,14 @@
+@media screen and (max-width:900px) {
+
+    .spotify-goodMorning-list{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+
+    .card-list {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+    }
+
+}

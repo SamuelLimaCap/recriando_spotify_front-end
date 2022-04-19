@@ -8,6 +8,7 @@
 body {
     margin: 0;
 
+    background-color: black;
     font-family: Helvetica, sans-serif;
     font-weight: 400;
 
@@ -32,7 +33,6 @@ button {
 }
 
 .spotify-nav-bar {
-    background-color: black;
     color: white;
 
     padding: 20px;
@@ -46,16 +46,7 @@ button {
     grid-area: spotify-nav-bar;
     grid-column-start: 1;
     
-}
-
-.spotify-main-view {
-    display: flex;
-    background-color: blue;
-
-    grid-area: spotify-main-view;
-    grid-column-start: 2;
-}
-
+} 
 .spotify-logo {
     width: 130px;
     margin-left: 10px;
@@ -98,6 +89,8 @@ button {
     display: flex;
     align-items: center;
 
+    margin-bottom: 5px;
+
     transition: color .2s linear;
 }
 
@@ -122,3 +115,107 @@ button {
 .spotify-divisor {
     color: var(--nav-bar-color);
 }
+
+.spotify-main-view {
+    background: linear-gradient(#783fa7 5%, #161616) ;
+
+    grid-area: spotify-main-view;
+    grid-column-start: 2;
+}
+
+
+.spotify-section{
+    margin-left: 30px;
+}
+
+.spotify-section-title{
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+
+/*
+    GoodMorning css
+*/
+
+.spotify-goodMorning-list{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    position: relative;
+
+}
+
+.goodMorning-item {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    width: 35vh;
+    max-height: 80px;
+    padding-right: 10px;
+    margin: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+.goodMorning-item img {
+    padding: 20px;
+    width: 20px;
+}
+
+.goodMorning-item p {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*
+    Card css
+*/
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    grid-gap: 20px;
+}
+.card {
+    display: grid;
+    width: 130px;
+    align-items: center;
+    align-content: center;
+    border: 1px solid whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+
+    padding: 20px;
+}
+
+.card img {
+    width: 130px;
+}
+
+.card .card-title {
+    color: white;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+
+/*
+    Play button
+*/
+.play-button {
+    color: greenyellow;
+    width: 50px;
+    visibility: hidden;
+    
+    right: 0;
+}
+
+.goodMorning-item:hover .play-button, .card:hover .play-button {
+    visibility: visible;
+}
+
+
