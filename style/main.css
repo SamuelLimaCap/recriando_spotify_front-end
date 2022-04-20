@@ -196,9 +196,15 @@ button {
     width: 130px;
 }
 
-.card .card-title {
+.card .card-text .card-title {
     color: white;
     font-weight: 700;
+    flex-wrap: wrap;
+}
+
+.card .card-text .card-description {
+    color: gainsboro;
+    font-weight: 400;
     flex-wrap: wrap;
 }
 
